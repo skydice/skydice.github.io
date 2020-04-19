@@ -19,19 +19,22 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Strong Dragon Blog 
-email: 22f@kakao.com 
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.strongdragon.me"
-github_username: skydice 
 
-# Build settings
-font_heading: "'Nanum Gothic'"
-font: "'Nanum Gothic'"
-google_fonts: "Nanum+Gothic:400,700"
-theme: minima
-plugins:
-  - jekyll-feed
+permalink: /posts/:title/
+texture:
+  title: Strong Dragon
+  tagline: Developer.
+  date_format: "%b %-d, %Y"
+  style: black
+  showNav: false
+  showPicker: false
+
+  social_links:
+    github:  skydice
+    linkedIn: in/nyongskk
 
 # Analytics
 analytics:
@@ -39,6 +42,9 @@ analytics:
   google:
     tracking_id: UA-160705191-1
     anonymize_ip: true
+
+plugins:
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
