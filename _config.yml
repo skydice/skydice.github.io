@@ -20,7 +20,7 @@
 
 title: Strong Dragon Blog 
 description: 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://www.strongdragon.me"
 
 permalink: /posts/:title/
@@ -35,13 +35,6 @@ texture:
   social_links:
     github:  skydice
     linkedIn: in/nyongskk
-
-# Analytics
-analytics:
-  provider: "google"
-  google:
-    tracking_id: UA-160705191-1
-    anonymize_ip: true
 
 plugins:
   - jekyll-seo-tag
