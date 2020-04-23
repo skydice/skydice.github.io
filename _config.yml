@@ -31,10 +31,13 @@ texture:
   style: black
   showNav: false
   showPicker: false
+  analytics_id: 'UA-160705191-1'
 
   social_links:
     github:  skydice
     linkedIn: in/nyongskk
+
+show_excerpts: true
 
 plugins:
   - jekyll-seo-tag
