@@ -114,8 +114,7 @@ models={\
 * 따라서 해당 프로토콜을 사용하기 위해서는 base64 인코딩을 사용해야 함 [참조](https://github.com/kserve/kserve/blob/master/docs/predict-api/v2/required_api.md)
 * Raw 데이터로 추론을 원하는 경우 커스텀 이미지를 사용해야 함  [참조](https://github.com/kserve/kserve/tree/37af39054499caf9145664a48981740ca4ce14f5/docs/samples/v1beta1/custom/torchserve)
 * KFServing을 위해선 다음의 두 가지 과정이 필요
-1. Persistent Volume Container를 만듦 [참조](https://github.com/kserve/kserve/blob/master/docs/samples/v1beta1/torchserve/model-archiver/README.md)
-* 아래 형태로 구성되어 있어야 함
+1. Persistent Volume Container를 만듦 [참조](https://github.com/kserve/kserve/blob/master/docs/samples/v1beta1/torchserve/model-archiver/README.md) - 아래 형태로 구성되어 있어야 함
 ```
 ├── config
 │   ├── config.properties
@@ -123,8 +122,7 @@ models={\
 │   ├── densenet_161.mar
 │   ├── mnist.mar
 ```
-2. InferenceService를 생성하여 서빙
-* 1에서 띄운 PVC의 경로를 아래와 같이 명시
+2. InferenceService를 생성하여 서빙 - 1에서 띄운 PVC의 경로를 아래와 같이 명시
 ```
 apiVersion: serving.kserve.io/v1beta1
 kind: InferenceService
