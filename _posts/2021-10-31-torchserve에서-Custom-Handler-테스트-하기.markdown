@@ -8,6 +8,7 @@ torchserve는 핸들러 파일만 구현하면 서빙할 수 있습니다. Custo
 
 ## MockContext
 * MockContext는 다음의 인자를 받아 생성됩니다.
+
 ```
 def __init__(self,
              model_pt_file='model.pt',
@@ -19,6 +20,7 @@ def __init__(self,
 
 ## 샘플
 * 아래와 같이 handler를 생성할 수 있습니다. `handle` 등을 호출해 테스트합니다.
+
 ```
 context = MockContext(
     model_pt_file=model_pt_file,
@@ -29,5 +31,3 @@ context = MockContext(
 mnist_handler = Handler()
 mnist_handler.initialize(context)
 ```
-
-## 결론
