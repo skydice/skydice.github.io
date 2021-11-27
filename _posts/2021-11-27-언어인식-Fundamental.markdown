@@ -4,7 +4,6 @@ title:  "언어인식 Fundamental"
 date:   2021-11-27 18:00:00 +0900
 categories: tech deeplearning
 ---
-# 언어인식 Fundamental
 이 글은 2013년 공개된 Spoken Language Recognition: From Fundamentals to Practice의 앞 부분을 요약한 글입니다.
 
 ## 언어인식이란?
