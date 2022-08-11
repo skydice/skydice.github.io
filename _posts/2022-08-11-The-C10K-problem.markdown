@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The C10K problem"
-date:   2022-08-12 18:00:00 +0900
+date:   2022-08-11 18:00:00 +0900
 categories: tech backend
 ---
 ### The C10K problem
