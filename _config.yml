@@ -21,7 +21,7 @@
 title: Strong Dragon Blog 
 description: 
 baseurl: ""
-url: "https://www.strongdragon.me"
+url: "https://skydice.github.io"
 
 permalink: /posts/:title/
 texture:
