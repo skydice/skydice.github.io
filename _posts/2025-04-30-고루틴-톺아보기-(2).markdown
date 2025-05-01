@@ -7,7 +7,7 @@ categories: tech
 ## GMP 모델 살펴보기
 GMP 모델은 고루틴 스케줄링을 위해 사용됩니다.
 
-![image](https://github-production-user-asset-6210df.s3.amazonaws.com/3898834/439537251-5525e1c1-8523-42dd-9e9d-3b3c33d4382f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250501%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250501T081633Z&X-Amz-Expires=300&X-Amz-Signature=ab81c6687577950d0480570fb311deac157afccc93f78e2a0136a9f73e6b148d&X-Amz-SignedHeaders=host)
+![image](https://github.com/user-attachments/assets/faaaccc8-9bf7-421a-9364-7688afd26116)
 ## Goroutine : 실제 실행 작업 단위
 Go에서 만든 경량 스레드로 함수 단위의 실행 흐름입니다. 수천 개 생성 가능하며 `go someFunc()` 하면 하나 생성됩니다.
 ## Machine : 운영체제의 실제 스레드
