@@ -6,18 +6,13 @@ categories: tech
 ---
 ## GMP 모델 살펴보기
 GMP 모델은 고루틴 스케줄링을 위해 사용됩니다.
-약자 | 의미 | 역할
--- | -- | --
-G | Goroutine | 실제 실행 작업 단위
-M | Machine | 운영체제의 실제 스레드
-P | Processor | G를 보관하고 스케줄링
 
-![image](https://github.com/user-attachments/assets/5525e1c1-8523-42dd-9e9d-3b3c33d4382f)
-## G
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/3898834/439537251-5525e1c1-8523-42dd-9e9d-3b3c33d4382f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250501%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250501T081633Z&X-Amz-Expires=300&X-Amz-Signature=ab81c6687577950d0480570fb311deac157afccc93f78e2a0136a9f73e6b148d&X-Amz-SignedHeaders=host)
+## Goroutine : 실제 실행 작업 단위
 Go에서 만든 경량 스레드로 함수 단위의 실행 흐름입니다. 수천 개 생성 가능하며 `go someFunc()` 하면 하나 생성됩니다.
-## M
+## Machine : 운영체제의 실제 스레드
 OS 레벨 스레드로 실제로 CPU에서 코드를 실행합니다. G는 M 위에서 실행됩니다.
-## P
+## Processor : G를 보관하고 스케줄링
 G를 관리하는 큐를 가집니다. G를 어떤 순서로 실행할지 결정합니다. 기본적으로 CPU 코어 수만큼 P가 생성됩니다. 각 P는 최대 256개의 고루틴을 담을 수 있습니다.
 만약 P의 큐가 다 차면 Global Run Queue에 G가 등록됩니다. P는 Queue의 모든 G를 처리하면 Global Queue에서 G를 가져와 실행합니다.
 ## 특징 (vs Coroutine)
